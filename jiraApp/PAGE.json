@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Product list",
+    "sid": "productList",
+    "table": {
+      "title": "issue",
+      "data": [
+        {
+          "name": "index",
+          "field": "Index",
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "field": "ID",
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "field": "Type",
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "field": "Title",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "field": "Description",
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "field": "Status",
+          "type": "string"
+        },
+        {
+          "name": "priority",
+          "field": "Priority",
+          "type": "string"
+        },
+        {
+          "name": "timeSpent",
+          "field": "Time Spent",
+          "type": "string"
+        },
+        {
+          "name": "timeRemaining",
+          "field": "Time Remaining",
+          "type": "string"
+        },
+        {
+          "name": "estimate",
+          "field": "Estimate",
+          "type": "string"
+        },
+        {
+          "name": "startDate",
+          "field": "Start Date",
+          "type": "string"
+        },
+        {
+          "name": "dueDate",
+          "field": "Due Date",
+          "type": "string"
+        }
+      ]
+    },
+    "form": {
+      "title": "create issue",
+      "data": [
+        {
+          "name": "IssueType",
+          "field": "Issue Type",
+          "type": "string",
+          "required": true,
+          "placeholder": "string"
+        },
+        {
+          "name": "IssShortSummary",
+          "field": "Short Summary",
+          "type": "string",
+          "placeholder": "string"
+        },
+        {
+          "name": "Description",
+          "field": "Description",
+          "type": "string",
+          "placeholder": "string"
+        },
+        {
+          "name": "Assignees",
+          "field": "Assignees",
+          "type": "string",
+          "placeholder": "string"
+        },
+        {
+          "name": "Priority",
+          "field": "Priority",
+          "type": "string",
+          "placeholder": "string"
+        }
+      ]
+    },
+    "button": [
+      {
+        "name": "create",
+        "field": "Create",
+        "api": "",
+        "model": "post",
+        "location": ["topTable"]
+      },
+      {
+        "name": "update",
+        "field": "Update",
+        "api": "",
+        "model": "put",
+        "location": ["action"]
+      },
+      {
+        "name": "remove",
+        "field": "Remove",
+        "api": "",
+        "model": "delete",
+        "location": ["action"]
+      }
+    ]
+  }
+]
